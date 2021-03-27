@@ -18,7 +18,7 @@ class Grid {
     );
   };
 
-  visitedCoord = (position) => {
+  addVisitedCoord = (position) => {
     const coord = [position.x, position.y];
     if (
       this.world.filter((x) => {
@@ -28,7 +28,7 @@ class Grid {
       this.world.push(coord);
   };
 
-  scentCoord = (position) => {
+  addScentCoord = (position) => {
     const coord = [position.x, position.y];
     if (
       this.scents.filter((x) => {

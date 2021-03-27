@@ -17,21 +17,21 @@ while (instructionsSplit.length > 0) {
   robots.push(robot);
   let actions = instructionsSplit.shift();
 
-  grid.visitedCoord(robot.position);
+  grid.addVisitedCoord(robot.position);
 
   for (const action of actions) {
-    robot.action(action);
+    robot.doAction(action);
 
     if (grid.isOutTheGrid(robot.position)) {
       robot.goBack();
       if (!grid.isScentCoord(robot.position)) {
-        grid.scentCoord(robot.position);
+        grid.addScentCoord(robot.position);
         robot.changeStatus("LOST");
         break;
       }
     }
 
-    grid.visitedCoord(robot.position);
+    grid.addVisitedCoord(robot.position);
   }
   console.log(robot.showPosition());
   robots.push(robot);
