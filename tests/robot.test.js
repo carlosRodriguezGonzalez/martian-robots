@@ -16,22 +16,22 @@ describe("Rotations", () => {
   describe("Rotations Left", () => {
     test("N", () => {
       const robot = new Robot(1, 1, "N");
-      robot.rotateLeft();
+      robot.rotate("L");
       expect(robot.showPosition()).toBe("1 1 W");
     });
     test("E", () => {
       const robot = new Robot(1, 1, "E");
-      robot.rotateLeft();
+      robot.rotate("L");
       expect(robot.showPosition()).toBe("1 1 N");
     });
     test("S", () => {
       const robot = new Robot(1, 1, "S");
-      robot.rotateLeft();
+      robot.rotate("L");
       expect(robot.showPosition()).toBe("1 1 E");
     });
     test("W", () => {
       const robot = new Robot(1, 1, "W");
-      robot.rotateLeft();
+      robot.rotate("L");
       expect(robot.showPosition()).toBe("1 1 S");
     });
     test("S", () => {});
@@ -39,22 +39,22 @@ describe("Rotations", () => {
   describe("Rotations Right", () => {
     test("N", () => {
       const robot = new Robot(1, 1, "N");
-      robot.rotateRight();
+      robot.rotate("R");
       expect(robot.showPosition()).toBe("1 1 E");
     });
     test("E", () => {
       const robot = new Robot(1, 1, "E");
-      robot.rotateRight();
+      robot.rotate("R");
       expect(robot.showPosition()).toBe("1 1 S");
     });
     test("S", () => {
       const robot = new Robot(1, 1, "S");
-      robot.rotateRight();
+      robot.rotate("R");
       expect(robot.showPosition()).toBe("1 1 W");
     });
     test("W", () => {
       const robot = new Robot(1, 1, "W");
-      robot.rotateRight();
+      robot.rotate("R");
       expect(robot.showPosition()).toBe("1 1 N");
     });
     test("S", () => {});
