@@ -1,7 +1,7 @@
 # Martian robots
 
-- [x] app working
-- [x] readme
+- [x] App working
+- [x] Readme
 - [x] Testing (Unit)
 - [x] Script approach
 - [x] Rest api approach
