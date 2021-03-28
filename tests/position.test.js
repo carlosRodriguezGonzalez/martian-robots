@@ -1,4 +1,4 @@
-const Robot = require("../src/robot");
+const Robot = require("../src/models/robot");
 
 test("should ", () => {
   const robot = new Robot(1, 1, "S");

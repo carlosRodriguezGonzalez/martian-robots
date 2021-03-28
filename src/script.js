@@ -1,5 +1,5 @@
-const Grid = require("./grid");
-const Robot = require("./robot");
+const Grid = require("./models/grid");
+const Robot = require("./models/robot");
 
 const instructions =
   "5 3\n1 1 E\nRFRFRFRF\n3 2 N\nFRRFLLFFRRFLL\n0 3 W\nLLFFFLFLFL";

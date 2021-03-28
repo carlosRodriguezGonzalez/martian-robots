@@ -1,4 +1,4 @@
-const Robot = require("../src/robot");
+const Robot = require("../src/models/robot");
 
 describe("Show position", () => {
   test("WAITING robot ", () => {
