@@ -43,7 +43,7 @@ const exploreWorld = async (req, res) => {
   }
   const gridDatabase = new GridDatabase({ worldExplore: grid.world });
   await gridDatabase.save();
-  res.send(responseData);
+  res.send({ gridId: gridDatabase._id, robots: responseData });
 };
 
 module.exports = { exploreWorld };
