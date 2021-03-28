@@ -1,5 +1,14 @@
 # Martian robots
 
+- [x] app working
+- [x] readme
+- [x] Testing (Unit)
+- [x] Script approach
+- [x] Rest api approach
+- [x] Persistence layer for grids (MongoDB)
+- [x] Insights (get explored surface)
+- [x] Shipping (Docker)
+
 ## Installation
 
 ```bash
