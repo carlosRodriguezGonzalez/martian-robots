@@ -1,5 +1,6 @@
 const Grid = require("../models/grid");
 const Robot = require("../models/robot");
+const GridDatabase = require("../database/grid.database");
 
 const exploreWorld = async (req, res) => {
   const { data } = req.body;
@@ -40,6 +41,8 @@ const exploreWorld = async (req, res) => {
     responseData.push(robot.showPosition());
     robots.push(robot);
   }
+  const gridDatabase = new GridDatabase({ worldExplore: grid.world });
+  await gridDatabase.save();
   res.send(responseData);
 };
 

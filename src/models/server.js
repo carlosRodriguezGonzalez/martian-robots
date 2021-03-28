@@ -2,11 +2,14 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors");
 
+const { dbConnection } = require("../database/config");
 class Server {
   constructor() {
     this.app = express();
     this.port = 3000;
     this.server = http.createServer(this.app);
+
+    dbConnection();
   }
 
   middlewares = () => {
