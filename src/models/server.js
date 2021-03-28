@@ -19,6 +19,7 @@ class Server {
 
   routes = () => {
     this.app.use("/api/robot", require("../router/robot.router"));
+    this.app.use("/api/insights", require("../router/insights.router"));
   };
 
   execute() {
