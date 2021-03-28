@@ -22,3 +22,10 @@ Script
 docker build -t martian-script -f .\docker\script\Dockerfile .
 docker run martian-script
 ```
+
+Rest
+
+```bash
+docker build -t martian-rest -f .\docker\rest\Dockerfile .
+docker run -p 3000:3000 martian-rest
+```
