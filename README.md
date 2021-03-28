@@ -14,6 +14,12 @@ Script
 npm run start-script
 ```
 
+Rest
+
+```bash
+npm run start-server
+```
+
 ## Docker
 
 Script
